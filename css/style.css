@@ -6,7 +6,17 @@ html * {
     font-weight: 100;
 }
 
+#menu {
+    background-image: url('../img/blur-bokeh-bright-2607733---Photo\ by\ Florent\ B.\ from\ Pexels.jpg');
+}
+
 .vl {
     border-left: 1px solid white;
     height: 35px;
+}
+
+.test {
+    width: auto;
+    height: 100vh;
+    background: cover;
 }
