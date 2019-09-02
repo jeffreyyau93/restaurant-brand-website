@@ -17,8 +17,9 @@
 </head>
 
 <body>
+    <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-dark text-light fixed-top">
-        <a class="navbar-brand" href="#"><img src="img/pierre_logo.svg" alt="皮耶爾" style="width:60px;"></a>
+        <a class="navbar-brand" href="#carousel"><img src="img/pierre-stone-shorthand.svg" alt="皮耶爾" style="width:60px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,8 +42,10 @@
             </ul>
         </div>
     </nav>
+    <!-- navbar end -->
 
-    <section id="section01" class="mt-lg-0">
+    <!-- carousel start -->
+    <section id="carousel" class="mt-lg-0">
         <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
             <ol class="carousel-indicators">
                 <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -53,19 +56,40 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/blur-bokeh-bright-2607733---Photo by Florent B. from Pexels.jpg" class="test d-block w-100" alt="輪播圖01" />
+                    <img src="img/blur-bokeh-bright-2607733---Photo by Florent B. from Pexels.jpg"
+                        class="test d-block w-100" alt="輪播圖01" style="object-fit: cover;">
+                    <img src="img/pierre_hero.svg" class="position-absolute w-100 hero">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#reservation" class="btn btn-light">立即訂位</a>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/beef-cooked-cuisine-1268549---Photo by rawpixel.com from Pexels.jpg" class="test d-block w-100" alt="輪播圖02" />
+                    <img src="img/beef-cooked-cuisine-1268549---Photo by rawpixel.com from Pexels.jpg" class="test d-block w-100" alt="輪播圖02" style="object-fit: cover;">
+                    <img src="img/pierre_hero.svg" class="position-absolute w-100 hero">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#reservation" class="btn btn-light">立即訂位</a>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/alcohol-ale-bar-159291---pexels.jpg" class="test d-block w-100" alt="輪播圖03" />
+                    <img src="img/alcohol-ale-bar-159291---pexels.jpg" class="test d-block w-100" alt="輪播圖03" style="object-fit: cover;">
+                    <img src="img/pierre_hero.svg" class="position-absolute w-100 hero">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#reservation" class="btn btn-light">立即訂位</a>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/bread-burlap-close-up-1600711--- Canva Photos.jpg" class="test d-block w-100" alt="輪播圖03" />
+                    <img src="img/bread-burlap-close-up-1600711--- Canva Photos.jpg" class="test d-block w-100" alt="輪播圖03" style="object-fit: cover;">
+                    <img src="img/pierre_hero.svg" class="position-absolute w-100 hero">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#reservation" class="btn btn-light">立即訂位</a>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/beef-delicious-dinner-769289---Photo by Malidate Van from Pexels.jpg" class="test d-block w-100" alt="輪播圖03" />
+                    <img src="img/beef-delicious-dinner-769289---Photo by Malidate Van from Pexels.jpg" class="test d-block w-100" alt="輪播圖03" style="object-fit: cover;">
+                    <img src="img/pierre_hero.svg" class="position-absolute w-100 hero">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#reservation" class="btn btn-light">立即訂位</a>
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -78,23 +102,26 @@
             </a>
         </div>
     </section>
+    <!-- carousel end -->
 
-    <section id="about" class="container-fluid">
+    <!-- <section id="about" class="container-fluid">
         <div class="vh-100 mt-0 mb-5">
             <div class="row mb-100">
                 <div class="col col-md-12 text-center">
                     <h1>關於Pierre Stone</h1>
-                    <p>認識兩位共同創辦人</p>
+                    <p>認識兩位創辦人</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <img src="img/cap-chef-cook-70496---Photo by Robin Stickel from Pexels.jpg" class="img-fluid rounded-circle" />
+                    <img src="img/cap-chef-cook-70496---Photo by Robin Stickel from Pexels.jpg"
+                        class="img-fluid rounded-circle" />
                 </div>
                 <div class="col-md-9 d-md-flex flex-md-column justify-content-md-center">
                     <h1>主廚 Pierre Wang</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum dolor eius aut asperiores
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum dolor eius aut
+                        asperiores
                         corporis amet, earum reprehenderit quisquam nulla
                         dolore eveniet facilis, quibusdam est voluptates porro cum, nemo repellat?
                     </p>
@@ -104,28 +131,154 @@
                 <div class="col-md-9 d-md-flex flex-md-column justify-content-md-center">
                     <h1>經理 Francis Stone</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum dolor eius aut asperiores
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum dolor eius aut
+                        asperiores
                         corporis amet, earum reprehenderit quisquam nulla
                         dolore eveniet facilis, quibusdam est voluptates porro cum, nemo repellat?
                     </p>
                 </div>
                 <div class="col-md-3">
-                    <img src="img/after-work-business-people-businessman-1498965---Photo by rawpixel.com from Pexels.jpg" class="img-fluid rounded-circle" />
+                    <img src="img/after-work-business-people-businessman-1498965---Photo by rawpixel.com from Pexels.jpg"
+                        class="img-fluid rounded-circle" />
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section>
+        <div class="vh-100 mt-0 mb-5">
+            <div class="row mb-100">
+                <div class="col col-md-12 text-center">
+                    <h1>關於Pierre Stone</h1>
+                    <p>認識兩位創辦人</p>
+                </div>
+            </div>
+            <br><br><br><br>
+            <ul class="list-unstyled">
+                <li class="media">
+                    <img src="img/cap-chef-cook-70496---Photo by Robin Stickel from Pexels.jpg" class=" rounded-circle mr-3 w-25">
+                    <div class="media-body">
+                        <h2 class="mt-0 mb-1">主廚 Pierre Wang</h2>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </li>
+                <hr class="my-4">
+                <li class="media my-4">
+                    <div class="media-body">
+                        <h2 class="mt-0 mb-1">經理 Francis Stone</h2>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in fucibus.
+                    </div>
+                    <img src="img/after-work-business-people-businessman-1498965---Photo by rawpixel.com from Pexels.jpg" class=" rounded-circle mr-3 w-25">
+                </li>
+            </ul>
+        </div>
     </section>
 
+    
+    <!-- menu start -->
     <section id="menu" class="container-fluid vh-100">
-        <div class="row">
+        <div class="row pt-5 pb-5">
             <div class="col col-md-12 text-center text-light">
                 <h1>餐點介紹</h1>
-                <p>Pierre Stone 的時令佳餚</p>
+                <p>探索 Pierre Stone 的時令佳餚</p>
+            </div>
+        </div>
+
+        <div class="container d-flex flex-column justify-content-center">
+            <div class="row pb-5">
+                <div class="col-4"></div>
+                <div class="col-4 nav justify-content-around align-items-center" id="menu-tab">
+                    <a class="active" id="nav-home-tab" data-toggle="tab" href="#nav-lunch">午餐</a>
+                    <a class="" id="nav-profile-tab" data-toggle="tab" href="#nav-dinner">晚餐</a>
+                    <a class="" id="nav-contact-tab" data-toggle="tab" href="#nav-alcohol">酒類</a>
+                    <a class="" id="nav-contact-tab" data-toggle="tab" href="#nav-coffee">咖啡</a>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="tab-content bg-white" id="menu-tab-content">
+                <div class="tab-pane fade show active" id="nav-lunch">
+                    <div class="row d-flex flex-row m-0 p-5">
+                        <div class="">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id unde corrupti quibusdam itaque dolore veniam, perspiciatis sed, possimus libero repudiandae eligendi impedit sunt. Veritatis sunt debitis dolorem. Tempore rem assumenda nobis impedit. Voluptaunt assumenda quia dolorem numquam omnis adipisci exercitationem dignissimos ex qui. Nobis dolores optio beatae fugiat, repudiandae, minima impedit quos commodi in nihil eum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-dinner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus nemo a voluptas nesciunt ratione facilis voluptatum distinctio neque autem aspernatur quasi ut maxime suscipit incidunt harum deserunt. Impedit commodi sint nemo! Ipsum fugit cupiditate nisi commodi sit sequi itaque ducimus provident accusamus eum corporis, quia nulla magnam repellat quidem tenetur quam a, fuga placeat nihil voluptates eaque. Omnis, nulla. Est quo obcaecati vero tenetur aliquam, tempore nulla sint illum quas culpa nostrum, sequi voluptas quibusdam harum aut! Soluta ducimus nesciunt esse nulla, iusto delectus officiis doloribus pariatur magni deserunt debitis repellat, architecto ipsa, earum beatae sapiente laudantium? Sequi, quidem!</div>
+                <div class="tab-pane fade" id="nav-alcohol">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus nemo a voluptas nesciunt ratione facilis voluptatum distinctio neque autem aspernatur quasi ut maxime suscipit incidunt harum deserunt. Impedit commodi sint nemo! Ipsum fugit cupiditate nisi commodi sit sequi itaque ducimus provident accusamus eum corporis, quia nulla magnam repellat quidem tenetur quam a, fuga placeat nihil voluptates eaque. Omnis, nulla. Est quo obcaecati vero tenetur aliquam, tempore nulla sint illum quas culpa nostrum, sequi voluptas quibusdam harum aut! Soluta ducimus nesciunt esse nulla, iusto delectus officiis doloribus pariatur magni deserunt debitis repellat, architecto ipsa, earum beatae sapiente laudantium? Sequi, quidem!</div>
+                <div class="tab-pane fade" id="nav-coffee">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus nemo a voluptas nesciunt ratione facilis voluptatum distinctio neque autem aspernatur quasi ut maxime suscipit incidunt harum deserunt. Impedit commodi sint nemo! Ipsum fugit cupiditate nisi commodi sit sequi itaque ducimus provident accusamus eum corporis, quia nulla magnam repellat quidem tenetur quam a, fuga placeat nihil voluptates eaque. Omnis, nulla. Est quo obcaecati vero tenetur aliquam, tempore nulla sint illum quas culpa nostrum, sequi voluptas quibusdam harum aut! Soluta ducimus nesciunt esse nulla, iusto delectus officiis doloribus pariatur magni deserunt debitis repellat, architecto ipsa, earum beatae sapiente laudantium? Sequi, quidem!</div>
             </div>
         </div>
     </section>
+    <!-- menu end -->
+
+    <!-- reservation start -->
+    <section id="reservation" class="container-fluid vh-100">
+        <div class="container table-responsive">
+            <h1 class="text-center text-dark py-4">預約訂位</h1>
+            <form class="needs-validation" novalidate>
+                <table class="table table-light table-hover table-striped">
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">姓名</label>
+                                <input id="name" type="input" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    請輸入姓名
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">電話號碼</label>
+                                <input id="tel" type="tel" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    請輸入電話號碼
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">電子郵件</label>
+                                <input id="email" type="email" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    請輸入電子郵件
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">留言訊息</label>
+                                <textarea id="message" rows="3" class="form-control"></textarea>
+                                <div class="invalid-feedback">
+                                    請輸入留言訊息
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <button type="submit" class="btn btn-dark" title="送出" data-toggle="tooltip">送出</button>
+                            <button type="reset" class="btn btn-dark" title="重設" data-toggle="tooltip">重設</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </section>
+    <!-- reservation end -->
+
     <footer class="py-5 bg-dark text-white text-center">
-        <p>Copyright © 2019 Jeffrey Yau</p>
+        <p>Copyright © 2019 JeffreyYau93</p>
     </footer>
 </body>
 
