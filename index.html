@@ -8,17 +8,19 @@
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:100,300,400&display=swap">
+    <!-- <link rel="stylesheet" href="css/all.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.4.1.js" defer></script>
     <script src="js/popper.min.js" defer></script>
     <script src="js/bootstrap.js" defer></script>
+    <script src="js/all.js"></script>
     <script src="js/script.js" defer></script>
     <title>Restaurant Brand Website</title>
 </head>
 
 <body>
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-dark text-light fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="d-flex flex-grow-1">
             <span class="w-100 d-lg-none d-block"></span>
             <a class="navbar-brand d-none d-lg-block" href="#carousel">
@@ -30,19 +32,23 @@
                 </button>
             </div>
         </div>
+        <div class="ther-blur"></div>
 
         <div class="collapse navbar-collapse text-right" id="navbar-links">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item pr-2 active">
-                    <a class="nav-link" href="#about">關於我們 <span class="sr-only">(current)</span></a>
+                <li class="nav-item pr-3 active">
+                    <a class="nav-link" href="#carousel">回到首頁 </i><span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item pr-2">
+                <li class="nav-item pr-3">
+                    <a class="nav-link" href="#about">關於我們</a>
+                </li>
+                <li class="nav-item pr-3">
                     <a class="nav-link" href="#menu">餐點介紹</a>
                 </li>
-                <li class="nav-item pr-2">
+                <li class="nav-item pr-3">
                     <a class="nav-link" href="#reservation">預約訂位</a>
                 </li>
-                <li class="nav-item pr-2">
+                <li class="nav-item pr-3">
                     <a class="nav-link" href="#contact">聯絡我們</a>
                 </li>
             </ul>
@@ -51,7 +57,7 @@
     <!-- navbar end -->
 
     <!-- carousel start -->
-    <section class="container-fluid px-0">
+    <section id="carousel" class="container-fluid px-0">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -133,7 +139,7 @@
         </div>
     </section> -->
 
-    <section class="container">
+    <section id="about" class="container">
         <div class="vh-100 mt-0 mb-5">
             <div class="row mb-100">
                 <div class="col col-md-12 text-center">
@@ -266,13 +272,38 @@
     <!-- reservation end -->
 
     <!-- contact start -->
-    <section id="contact" class="container-fluid vh-100 mx-0 bg-danger">
-        <h1>聯絡我們</h1>
+    <section id="contact" class="container-fluid vh-100 mx-0 bg-dark text-light">
+        <div class="row">
+            <div class="col-lg-6 d-none d-lg-block p-0 vh-100 overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.702152324414!2d121.41729491542732!3d25.044180083967518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bed3dc9b59%3A0x57e6439a2db0fa2a!2zMjQzLCBOZXcgVGFpcGVpIENpdHksIFRhaXNoYW4gRGlzdHJpY3QsIOazsOWxseiBt-iok-S4reW_gw!5e0!3m2!1sen!2stw!4v1567655958210!5m2!1sen!2stw" width="800" height="1920" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="row col col-lg-6 flex-column flex-nowrap">
+                <div class="col-3">
+                    <h2>聯絡我們</h2>
+                </div>
+                <div class="col-3">
+                    <p>
+                        營業時間: 10:00 AM - 00:00 AM<br>
+                        地址: 24302新北市泰山區貴子里致遠新村55之1號<br>
+                        電話: (02) 8888-8888<br>
+                        Email: admin@pierre_stone.com
+                    </p>
+                </div>
+                <div class="col-3">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <!-- <div class="col-md-5 col-md-offset-7 col-sm-5 col-sm-offset-7"> -->
+                <div class="col-3">
+                    <footer class="footer-short mt-40">
+                        <p>Copyright &copy; 2019 jeffreyyau93</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- contact end -->
-    <footer class="py-5 bg-dark text-white text-center">
-        <p>Copyright © 2019 JeffreyYau93</p>
-    </footer>
 </body>
 
 </html>
