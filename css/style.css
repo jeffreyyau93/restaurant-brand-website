@@ -1,14 +1,14 @@
 html * {
-    font-family: 'Noto Serif TC', 'Microsoft JhengHei';
+    font-family: 'Noto Sans TC', 'Microsoft JhengHei';
 }
 
 #navbar-links {
     font-weight: 100;
 }
 
-#menu {
+/* #menu {
     background-image: url('../img/alcohol-bar-beer-1283219---Canva%20Photos.jpg');
-}
+} */
 
 .hero {
     top: 50%;

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:100,300,400&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400&display=swap&subset=chinese-traditional" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/all.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.4.1.js" defer></script>
@@ -172,9 +172,8 @@
         </div>
     </section>
 
-    
     <!-- menu start -->
-    <section id="menu" class="container-fluid vh-100">
+    <section id="menu" class="container-fluid vh-100 bg-dark">
         <div class="row pt-5 pb-5">
             <div class="col col-md-12 text-center text-light">
                 <h1>餐點介紹</h1>
@@ -185,25 +184,79 @@
         <div class="container d-flex flex-column justify-content-center">
             <div class="row pb-5">
                 <div class="col-4"></div>
-                <div class="col-4 nav justify-content-around align-items-center" id="menu-tab">
-                    <a class="active" id="nav-home-tab" data-toggle="tab" href="#nav-lunch">午餐</a>
-                    <a class="" id="nav-profile-tab" data-toggle="tab" href="#nav-dinner">晚餐</a>
-                    <a class="" id="nav-contact-tab" data-toggle="tab" href="#nav-alcohol">酒類</a>
-                    <a class="" id="nav-contact-tab" data-toggle="tab" href="#nav-coffee">咖啡</a>
+                <div class="col-4 nav justify-content-around align-items-center bg-light" id="menu-tab">
+                    <a class="active text-dark" id="nav-home-tab" data-toggle="tab" href="#nav-lunch">午餐</a>
+                    <a class="text-dark" id="nav-profile-tab" data-toggle="tab" href="#nav-dinner">晚餐</a>
+                    <a class="text-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-alcohol">酒類</a>
+                    <a class="text-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-coffee">咖啡</a>
                 </div>
                 <div class="col-4"></div>
             </div>
             <div class="tab-content bg-white" id="menu-tab-content">
                 <div class="tab-pane fade show active" id="nav-lunch">
-                    <div class="row d-flex flex-row m-0 p-5">
-                        <div class="">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id unde corrupti quibusdam itaque dolore veniam, perspiciatis sed, possimus libero repudiandae eligendi impedit sunt. Veritatis sunt debitis dolorem. Tempore rem assumenda nobis impedit. Voluptaunt assumenda quia dolorem numquam omnis adipisci exercitationem dignissimos ex qui. Nobis dolores optio beatae fugiat, repudiandae, minima impedit quos commodi in nihil eum.</p>
+                    <div class="row d-flex flex-row m-0 p-0">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="https://picsum.photos/300/200/?random=1" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://picsum.photos/300/200/?random=1" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://picsum.photos/300/200/?random=1" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-dinner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus nemo a voluptas nesciunt ratione facilis voluptatum distinctio neque autem aspernatur quasi ut maxime suscipit incidunt harum deserunt. Impedit commodi sint nemo! Ipsum fugit cupiditate nisi commodi sit sequi itaque ducimus provident accusamus eum corporis, quia nulla magnam repellat quidem tenetur quam a, fuga placeat nihil voluptates eaque. Omnis, nulla. Est quo obcaecati vero tenetur aliquam, tempore nulla sint illum quas culpa nostrum, sequi voluptas quibusdam harum aut! Soluta ducimus nesciunt esse nulla, iusto delectus officiis doloribus pariatur magni deserunt debitis repellat, architecto ipsa, earum beatae sapiente laudantium? Sequi, quidem!</div>
-                <div class="tab-pane fade" id="nav-alcohol">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus nemo a voluptas nesciunt ratione facilis voluptatum distinctio neque autem aspernatur quasi ut maxime suscipit incidunt harum deserunt. Impedit commodi sint nemo! Ipsum fugit cupiditate nisi commodi sit sequi itaque ducimus provident accusamus eum corporis, quia nulla magnam repellat quidem tenetur quam a, fuga placeat nihil voluptates eaque. Omnis, nulla. Est quo obcaecati vero tenetur aliquam, tempore nulla sint illum quas culpa nostrum, sequi voluptas quibusdam harum aut! Soluta ducimus nesciunt esse nulla, iusto delectus officiis doloribus pariatur magni deserunt debitis repellat, architecto ipsa, earum beatae sapiente laudantium? Sequi, quidem!</div>
-                <div class="tab-pane fade" id="nav-coffee">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus nemo a voluptas nesciunt ratione facilis voluptatum distinctio neque autem aspernatur quasi ut maxime suscipit incidunt harum deserunt. Impedit commodi sint nemo! Ipsum fugit cupiditate nisi commodi sit sequi itaque ducimus provident accusamus eum corporis, quia nulla magnam repellat quidem tenetur quam a, fuga placeat nihil voluptates eaque. Omnis, nulla. Est quo obcaecati vero tenetur aliquam, tempore nulla sint illum quas culpa nostrum, sequi voluptas quibusdam harum aut! Soluta ducimus nesciunt esse nulla, iusto delectus officiis doloribus pariatur magni deserunt debitis repellat, architecto ipsa, earum beatae sapiente laudantium? Sequi, quidem!</div>
+                <div class="tab-pane fade" id="nav-dinner">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, ducimus nemo a voluptas nesciunt ratione facilis voluptatum distinctio neque autem aspernatur
+                    quasi ut maxime suscipit incidunt harum deserunt. Impedit commodi sint nemo! Ipsum fugit cupiditate
+                    nisi commodi sit sequi itaque ducimus provident accusamus eum corporis, quia nulla magnam repellat
+                    quidem tenetur quam a, fuga placeat nihil voluptates eaque. Omnis, nulla. Est quo obcaecati vero
+                    tenetur aliquam, tempore nulla sint illum quas culpa nostrum, sequi voluptas quibusdam harum aut!
+                    Soluta ducimus nesciunt esse nulla, iusto delectus officiis doloribus pariatur magni deserunt
+                    debitis repellat, architecto ipsa, earum beatae sapiente laudantium? Sequi, quidem!</div>
+                <div class="tab-pane fade" id="nav-alcohol">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, ducimus nemo a voluptas nesciunt ratione facilis voluptatum distinctio neque autem aspernatur
+                    quasi ut maxime suscipit incidunt harum deserunt. Impedit commodi sint nemo! Ipsum fugit cupiditate
+                    nisi commodi sit sequi itaque ducimus provident accusamus eum corporis, quia nulla magnam repellat
+                    quidem tenetur quam a, fuga placeat nihil voluptates eaque. Omnis, nulla. Est quo obcaecati vero
+                    tenetur aliquam, tempore nulla sint illum quas culpa nostrum, sequi voluptas quibusdam harum aut!
+                    Soluta ducimus nesciunt esse nulla, iusto delectus officiis doloribus pariatur magni deserunt
+                    debitis repellat, architecto ipsa, earum beatae sapiente laudantium? Sequi, quidem!</div>
+                <div class="tab-pane fade" id="nav-coffee">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, ducimus nemo a voluptas nesciunt ratione facilis voluptatum distinctio neque autem aspernatur
+                    quasi ut maxime suscipit incidunt harum deserunt. Impedit commodi sint nemo! Ipsum fugit cupiditate
+                    nisi commodi sit sequi itaque ducimus provident accusamus eum corporis, quia nulla magnam repellat
+                    quidem tenetur quam a, fuga placeat nihil voluptates eaque. Omnis, nulla. Est quo obcaecati vero
+                    tenetur aliquam, tempore nulla sint illum quas culpa nostrum, sequi voluptas quibusdam harum aut!
+                    Soluta ducimus nesciunt esse nulla, iusto delectus officiis doloribus pariatur magni deserunt
+                    debitis repellat, architecto ipsa, earum beatae sapiente laudantium? Sequi, quidem!</div>
             </div>
         </div>
     </section>
@@ -272,10 +325,12 @@
     <!-- reservation end -->
 
     <!-- contact start -->
-    <section id="contact" class="container-fluid vh-100 mx-0 bg-dark text-light">
+    <section id="contact" class="container-fluid vh-100 mx-0 bg-danger text-light">
         <div class="row">
             <div class="col-lg-6 d-none d-lg-block p-0 vh-100 overflow-hidden">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.702152324414!2d121.41729491542732!3d25.044180083967518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bed3dc9b59%3A0x57e6439a2db0fa2a!2zMjQzLCBOZXcgVGFpcGVpIENpdHksIFRhaXNoYW4gRGlzdHJpY3QsIOazsOWxseiBt-iok-S4reW_gw!5e0!3m2!1sen!2stw!4v1567655958210!5m2!1sen!2stw" width="800" height="1920" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.702152324414!2d121.41729491542732!3d25.044180083967518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bed3dc9b59%3A0x57e6439a2db0fa2a!2zMjQzLCBOZXcgVGFpcGVpIENpdHksIFRhaXNoYW4gRGlzdHJpY3QsIOazsOWxseiBt-iok-S4reW_gw!5e0!3m2!1sen!2stw!4v1567655958210!5m2!1sen!2stw"
+                    width="800" height="1920" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
             <div class="row col col-lg-6 flex-column flex-nowrap">
                 <div class="col-3">
@@ -290,20 +345,55 @@
                     </p>
                 </div>
                 <div class="col-3">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <!-- <div class="col-md-5 col-md-offset-7 col-sm-5 col-sm-offset-7"> -->
-                <div class="col-3">
-                    <footer class="footer-short mt-40">
-                        <p>Copyright &copy; 2019 jeffreyyau93</p>
-                    </footer>
+                    <a href="https://twitter.com" target="_blank" class="text-light"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-light"><i class="fab fa-instagram"></i></a>
+
                 </div>
             </div>
         </div>
     </section>
     <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="footer-short mt-40 bg-dark text-light">
+        <p>Copyright &copy; 2019 jeffreyyau93</p>
+        <a href="https://github.com/jeffreyyau93" target="_blank" class="text-light"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jeffreyyau93" target="_blank" class="text-light"><i class="fab fa-linkedin"></i></a>
+        <a href="" target="_blank" class="text-light"><i class="fab fa-behance"></i></a>
+        <!-- admin login modal start -->
+        <a href="" class="text-light" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fas fa-sign-in-alt"></i></a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title text-dark w-100" id="exampleModalLabel">管理員登入</h5>
+                        <!-- <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button> -->
+                    </div>
+                    <div class="modal-body">
+                        <form method="POST" action="admin.php=?do" class="text-dark">
+                            <div class="form-group">
+                                <label for="admin-account" class="col-form-label">帳號</label>
+                                <input type="text" class="form-control" id="admin-account">
+                            </div>
+                            <div class="form-group">
+                                <label for="password-text" class="col-form-label">密碼</label>
+                                <input type="password" class="form-control" id="password-text"></input>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="submit" class="btn btn-dark">登入</button>
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- admin login modal end -->
+    </footer>
+    <!-- footer end -->
 </body>
 
 </html>
