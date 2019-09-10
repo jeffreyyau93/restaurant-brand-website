@@ -4,6 +4,8 @@ html * {
 
 #navbar-links {
     font-weight: 100;
+    background-image: linear-gradient(to right, transparent , rgba(0,0,0,1));
+    /* background:red; */
 }
 
 /* #menu {
@@ -34,6 +36,10 @@ html * {
 #menu-tab > a {
     color: #fff;
     text-decoration: none;
+}
+
+#contact {
+    background: #222;
 }
 
 /* button {
@@ -74,4 +80,13 @@ button.navbar-toggler {
     -o-filter: blur(20px);
     -ms-filter: blur(20px);
     filter: blur(20px);
+}
+
+
+.carousel-caption {
+    bottom: 200px;
+}
+
+.vh-70 {
+    height: 70vh;
 }
