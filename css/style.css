@@ -8,14 +8,15 @@ html * {
     /* background:red; */
 }
 
-/* #menu {
-    background-image: url('../img/alcohol-bar-beer-1283219---Canva%20Photos.jpg');
-} */
-
 .hero {
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
+}
+
+#about {
+    background-image: url('../img/alcohol-bar-beer-1283219---Canva\ Photos.jpg');
+    background-size: cover;
 }
 
 #menu-tab {
@@ -33,18 +34,11 @@ html * {
     /* text-transform: uppercase; */
     /* font-size: 13px; */
 }
+
 #menu-tab > a {
     color: #fff;
     text-decoration: none;
 }
-
-#contact {
-    background: #222;
-}
-
-/* button {
-	border: none !important;
-} */
 
 button.navbar-toggler {
     outline: none !important;
@@ -60,33 +54,31 @@ button.navbar-toggler {
     filter: brightness(0.9);
 }
 
-/* .background {
-	filter: blur(10px);
-	position: absolute;
-	width: 100vw;
-	height: 100vh;
-} */
-
-.the-blur{
-    position: fixed;
-    top:0;
-    width: 100%;
-    min-height: 50px;
-    margin-bottom: 20px;
-    background: rgba(0,0,0,.4);
-    z-index:1010;
-    -webkit-filter: blur(20px);
-    -moz-filter: blur(20px);
-    -o-filter: blur(20px);
-    -ms-filter: blur(20px);
-    filter: blur(20px);
-}
-
-
 .carousel-caption {
     bottom: 200px;
 }
 
-.vh-70 {
-    height: 70vh;
+/* custom color block */
+.ps-bg-dark {
+    background: #21212199 !important;
+}
+
+.ps-dark {
+    background: #222 !important;
+}
+
+.ps-bg-light {
+    background: #e3e3e3ee !important;
+}
+
+.font-weight-lightest {
+    font-weight: 100 !important;
+}
+
+.rounded-corner {
+    border-radius: 1.5rem !important;
+}
+
+.shadow-heavy {
+    box-shadow: 0.3rem 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
 }

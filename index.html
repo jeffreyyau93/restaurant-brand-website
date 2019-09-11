@@ -17,14 +17,14 @@ include_once('api.php');
     <script src="js/jquery-3.4.1.js" defer></script>
     <script src="js/popper.min.js" defer></script>
     <script src="js/bootstrap.js" defer></script>
-    <script src="js/all.js"></script>
+    <script src="js/all.js" defer></script>
     <script src="js/script.js" defer></script>
     <title>Pierre Stone</title>
 </head>
 
 <body>
     <!-- navbar start -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top p-0">
         <div class="d-flex flex-grow-1">
             <span class="w-100 d-lg-none d-block"></span>
             <a class="navbar-brand d-none d-lg-block" href="#carousel">
@@ -63,12 +63,12 @@ include_once('api.php');
     <!-- carousel start -->
     <section id="carousel" class="container-fluid px-0">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
+            <!-- <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
+            </ol> -->
             <div class="carousel-inner">
                 <div class="carousel-item vh-100 active">
                     <img src="img/blur-bokeh-bright-2607733---Photo by Florent B. from Pexels.jpg" class="d-block w-100 h-100" alt="...">
@@ -87,8 +87,8 @@ include_once('api.php');
                 </div>
             </div>
             <img src="img/pierre_hero.svg" class="position-absolute w-100 h-100 hero">
-            <div class="carousel-caption d-none d-md-block">
-                <a href="#reservation" class="btn btn-light">立即訂位</a>
+            <div class="carousel-caption d-block">
+                <a href="#reservation" class="btn btn-light shadow">立即訂位</a>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -102,98 +102,54 @@ include_once('api.php');
     </section>
     <!-- carousel end -->
 
-    <!-- <section id="about" class="container-fluid">
-        <div class="vh-100 mt-0 mb-5">
-            <div class="row mb-100">
-                <div class="col col-md-12 text-center">
-                    <h1>關於Pierre Stone</h1>
-                    <p>認識兩位創辦人</p>
-                </div>
+    <!-- about start -->
+    <section id="about" class="container-fluid">
+        <div class="row py-5 justify-content-center text-light">
+            <div class="text-center mb-5">
+                <h1 class="font-weight-light">關於Pierre Stone</h1>
+                <p class="font-weight-lightest">認識兩位創辦人</p>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="img/cap-chef-cook-70496---Photo by Robin Stickel from Pexels.jpg"
-                        class="img-fluid rounded-circle" />
-                </div>
-                <div class="col-md-9 d-md-flex flex-md-column justify-content-md-center">
-                    <h1>主廚 Pierre Wang</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum dolor eius aut
-                        asperiores
-                        corporis amet, earum reprehenderit quisquam nulla
-                        dolore eveniet facilis, quibusdam est voluptates porro cum, nemo repellat?
-                    </p>
-                </div>
+            <div class="d-flex flex-column align-items-center p-5 mb-5 ps-bg-light shadow-heavy rounded-corner text-dark">
+                <img src="img/cap-chef-cook-70496---Photo by Robin Stickel from Pexels.jpg" class=" rounded-circle w-50 py-5">
+                <h3 class="pb-3">
+                    <span class="font-weight-lightest">主廚</span>&nbsp;Pierre Wang
+                </h3>
+                <p class="font-weight-lightest">
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </p>
             </div>
-            <div class="row">
-                <div class="col-md-9 d-md-flex flex-md-column justify-content-md-center">
-                    <h1>經理 Francis Stone</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum dolor eius aut
-                        asperiores
-                        corporis amet, earum reprehenderit quisquam nulla
-                        dolore eveniet facilis, quibusdam est voluptates porro cum, nemo repellat?
-                    </p>
-                </div>
-                <div class="col-md-3">
-                    <img src="img/after-work-business-people-businessman-1498965---Photo by rawpixel.com from Pexels.jpg"
-                        class="img-fluid rounded-circle" />
-                </div>
+            <div class="d-flex flex-column align-items-center p-5 ps-bg-dark shadow-heavy rounded-corner text-light">
+                <img src="img/after-work-business-people-businessman-1498965---Photo by rawpixel.com from Pexels.jpg" class=" rounded-circle w-50 py-5">
+                <h3 class="pb-3">
+                    <span class="font-weight-lightest">經理</span>&nbsp;Francis Stone
+                </h3>
+                <p class="font-weight-lightest">
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in fucibus.
+                </p>
             </div>
-        </div>
-    </section> -->
-
-    <section id="about" class="container">
-        <div class="vh-100">
-            <div class="row mb-100 py-5">
-                <div class="col col-md-12 text-center">
-                    <h1>關於Pierre Stone</h1>
-                    <p>認識兩位創辦人</p>
-                </div>
-            </div>
-            <ul class="list-unstyled">
-                <li class="media">
-                    <img src="img/cap-chef-cook-70496---Photo by Robin Stickel from Pexels.jpg" class=" rounded-circle mr-3 w-25">
-                    <div class="media-body">
-                        <h2 class="mt-0 mb-1">主廚 Pierre Wang</h2>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
-                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-                        vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    </div>
-                </li>
-                <hr class="my-4">
-                <li class="media my-4">
-                    <div class="media-body">
-                        <h2 class="mt-0 mb-1">經理 Francis Stone</h2>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
-                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-                        vulputate fringilla. Donec lacinia congue felis in fucibus.
-                    </div>
-                    <img src="img/after-work-business-people-businessman-1498965---Photo by rawpixel.com from Pexels.jpg" class=" rounded-circle mr-3 w-25">
-                </li>
-            </ul>
         </div>
     </section>
+    <!-- about end -->
 
     <!-- menu start -->
-    <section id="menu" class="container-fluid bg-dark p-0 p-lg-5">
-        <div class="row pt-5 pb-5">
-            <div class="col col-md-12 text-center text-light">
+    <section id="menu" class="container-fluid p-0 p-lg-5">
+        <div class="row pt-5 pb-5 w-100">
+            <div class="col col-md-12 text-center text-dark">
                 <h1>餐點介紹</h1>
                 <p>探索 Pierre Stone 的時令佳餚</p>
             </div>
         </div>
 
         <div class="container d-flex flex-column justify-content-center p-0">
-            <div class="row pb-5">
-                <div class="col-4"></div>
+            <div class="row pb-5 w-100">
+                <!-- <div class="col-4"></div> -->
                 <div class="col-4 nav justify-content-around align-items-center bg-light" id="menu-tab">
                     <a class="active text-dark" id="nav-home-tab" data-toggle="tab" href="#nav-lunch">午餐</a>
                     <a class="text-dark" id="nav-profile-tab" data-toggle="tab" href="#nav-dinner">晚餐</a>
                     <a class="text-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-alcohol">酒類</a>
                     <a class="text-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-coffee">咖啡</a>
                 </div>
-                <div class="col-4"></div>
+                <!-- <div class="col-4"></div> -->
             </div>
             <div class="tab-content bg-white" id="menu-tab-content">
                 <div class="tab-pane fade show active" id="nav-lunch">
@@ -266,7 +222,7 @@ include_once('api.php');
     <!-- menu end -->
 
     <!-- reservation start -->
-    <section id="reservation" class="container-fluid vh-100">
+    <section id="reservation" class="container-fluid vh-100 px-0">
         <div class="container table-responsive">
             <h1 class="text-center text-dark py-4">預約訂位</h1>
             <form class="needs-validation" novalidate>
@@ -328,19 +284,19 @@ include_once('api.php');
     <!-- reservation end -->
 
     <!-- contact start -->
-    <section id="contact" class="container-fluid vh-70 p-0 text-light">
-        <div class="row h-100">
+    <section id="contact" class="container-fluid vh-100 text-light ps-dark">
+        <div class="row w-100 h-100 m-0">
             <div class="col-lg-6 d-none d-lg-block p-0 h-100">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.702152324414!2d121.41729491542732!3d25.044180083967518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bed3dc9b59%3A0x57e6439a2db0fa2a!2zMjQzLCBOZXcgVGFpcGVpIENpdHksIFRhaXNoYW4gRGlzdHJpY3QsIOazsOWxseiBt-iok-S4reW_gw!5e0!3m2!1sen!2stw!4v1567655958210!5m2!1sen!2stw" frameborder="0" allowfullscreen="true" class="w-100 h-100 border-0"></iframe>
             </div>
-            <div class="col col-lg-6 h100 d-flex flex-column align-items-left justify-content-around px-5 px-lg-5">
+            <div class="col col-lg-6 h100 d-flex flex-column align-items-left justify-content-around mx-0 p-0">
                 <div class="w-100 mx-auto text-center">
-                    <h2>聯絡我們</h2>
+                    <h2 class="font-weight-light">聯絡我們</h2>
                 </div>
-                <div class="mx-lg-5 mx-md-4 mx-sm-1 mx-3">
+                <div class="mx-lg-5 mx-md-4 mx-sm-1 mx-3 font-weight-light">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis qui nisi numquam suscipit aliquid dolores, fugiat velit molestias. Assumenda ad soluta dolore adipisci atque omnis id eius nam asperiores. Rerum nostrum libero illum hic consequatur amet, saepe veritatis et nihil fuga mollitia dignissimos commodi officia natus eos architecto accusantium ipsa?</p>
                 </div>
-                <div class="mx-lg-5 mx-md-4 mx-sm-1 mx-3">
+                <div class="mx-lg-5 mx-md-4 mx-sm-1 mx-3 font-weight-lightest">
                     <p>
                         <i class="fas fa-clock"></i>&nbsp;&nbsp;&nbsp;10:00 AM&nbsp;&nbsp;-&nbsp;&nbsp;00:00 AM<br>
                         <a href="https://goo.gl/maps/dVoQLnddnu8Utiju6" target="_blank" class="text-light"><i class="fas fa-map-marker-alt"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;24302新北市泰山區貴子里致遠新村55之1號<br>
@@ -361,7 +317,7 @@ include_once('api.php');
                         <a href="" target="_blank" class="text-light"><i class="fab fa-behance"></i></a>&nbsp;&nbsp;
                         <a href="" class="text-light" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fas fa-sign-in-alt"></i></a>
                     </div>
-                    Copyright &copy; 2019 jeffreyyau93
+                    <span class="font-weight-light">Copyright &copy; 2019 jeffreyyau93</span>
                     <!-- admin login modal start -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
                         <div class="modal-dialog">
