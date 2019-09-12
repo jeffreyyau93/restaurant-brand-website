@@ -28,11 +28,11 @@ include_once('api.php');
         <div class="d-flex flex-grow-1">
             <span class="w-100 d-lg-none d-block"></span>
             <a class="navbar-brand d-none d-lg-block" href="#carousel">
-                <img src="img/pierre-stone-shorthand.svg" alt="皮耶爾" style="width:72px;">
+                <img src="img/pierre_stone_shorthand.svg" alt="皮耶爾" style="width:72px;">
             </a>
             <div class="w-100 text-right">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links">
-                    <img src="img/pierre-stone-shorthand.svg" alt="皮耶爾" style="width:72px;">
+                    <img src="img/pierre_stone_shorthand.svg" alt="皮耶爾" style="width:72px;">
                 </button>
             </div>
         </div>
@@ -71,19 +71,22 @@ include_once('api.php');
             </ol> -->
             <div class="carousel-inner">
                 <div class="carousel-item vh-100 active">
-                    <img src="img/blur-bokeh-bright-2607733---Photo by Florent B. from Pexels.jpg" class="d-block w-100 h-100" alt="...">
+                    <img src="img/carousel_01.jpg" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item vh-100">
-                    <img src="img/beef-cooked-cuisine-1268549---Photo by rawpixel.com from Pexels.jpg" class="d-block w-100 h-100" alt="...">
+                    <img src="img/carousel_02.jpg" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item vh-100">
-                    <img src="img/alcohol-ale-bar-159291---pexels.jpg" class="d-block w-100 h-100" alt="...">
+                    <img src="img/carousel_03.jpg" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item vh-100">
-                    <img src="img/bread-cheese-close-up-821365---Photo by NastyaSensei from Pexels.jpg" class="d-block w-100 h-100" alt="...">
+                    <img src="img/carousel_04.jpg" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item vh-100">
-                    <img src="img/celebrate-celebration-cheers-1268558---Photo by rawpixel.com from Pexels.jpg" class="d-block w-100 h-100" alt="...">
+                    <img src="img/carousel_05.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item vh-100">
+                    <img src="img/carousel_06.jpg" class="d-block w-100 h-100" alt="...">
                 </div>
             </div>
             <img src="img/pierre_hero.svg" class="position-absolute w-100 h-100 hero">
@@ -110,7 +113,7 @@ include_once('api.php');
                 <p class="font-weight-lightest">認識兩位創辦人</p>
             </div>
             <div class="d-flex flex-column align-items-center p-5 mb-5 ps-bg-light shadow-heavy rounded-corner text-dark">
-                <img src="img/cap-chef-cook-70496---Photo by Robin Stickel from Pexels.jpg" class=" rounded-circle w-50 py-5">
+                <img src="img/about_pierre.jpg" class=" rounded-circle w-50 py-5">
                 <h3 class="pb-3">
                     <span class="font-weight-lightest">主廚</span>&nbsp;Pierre Wang
                 </h3>
@@ -119,7 +122,7 @@ include_once('api.php');
                 </p>
             </div>
             <div class="d-flex flex-column align-items-center p-5 ps-bg-dark shadow-heavy rounded-corner text-light">
-                <img src="img/after-work-business-people-businessman-1498965---Photo by rawpixel.com from Pexels.jpg" class=" rounded-circle w-50 py-5">
+                <img src="img/about_stone.jpg" class=" rounded-circle w-50 py-5">
                 <h3 class="pb-3">
                     <span class="font-weight-lightest">經理</span>&nbsp;Francis Stone
                 </h3>
