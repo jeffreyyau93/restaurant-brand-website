@@ -14,3 +14,17 @@
 //         navbar.classList.add('navbar-dark');
 //     }
 // }
+
+//select動作：請求後端的動物資料
+// $.post("api.php?do=select", function (re) {
+//     $('tbody').html(re); //塞入來自ajax的訊息
+//     $('.mdy').click(chginput);
+// });
+
+// function chginput() {
+//     let txtname = $(this).parents('tr').find('.name').text();
+//     $(this).parents('tr').find('.name').html(`
+//     <input type="text" value="${txtname}">
+//     `);
+//     // console.log(where);
+// }

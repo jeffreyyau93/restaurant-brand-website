@@ -156,66 +156,36 @@ include_once('api.php');
                     <div class="row d-flex flex-row m-0 p-0">
                         <div class="card-group">
                             <div class="card">
-                                <img src="https://picsum.photos/300/200/?random=1" class="card-img-top" alt="...">
+                                <img src="img/card_1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </div>
                             </div>
                             <div class="card">
-                                <img src="https://picsum.photos/300/200/?random=1" class="card-img-top" alt="...">
+                                <img src="img/card_2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This card has supporting text below as a natural lead-in to
                                         additional content.</p>
                                 </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </div>
                             </div>
                             <div class="card">
-                                <img src="https://picsum.photos/300/200/?random=1" class="card-img-top" alt="...">
+                                <img src="img/card_3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
                                         lead-in to additional content. This card has even longer content than the first
                                         to show that equal height action.</p>
                                 </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-dinner">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nobis, ducimus nemo a voluptas nesciunt ratione facilis voluptatum distinctio neque autem aspernatur
-                    quasi ut maxime suscipit incidunt harum deserunt. Impedit commodi sint nemo! Ipsum fugit cupiditate
-                    nisi commodi sit sequi itaque ducimus provident accusamus eum corporis, quia nulla magnam repellat
-                    quidem tenetur quam a, fuga placeat nihil voluptates eaque. Omnis, nulla. Est quo obcaecati vero
-                    tenetur aliquam, tempore nulla sint illum quas culpa nostrum, sequi voluptas quibusdam harum aut!
-                    Soluta ducimus nesciunt esse nulla, iusto delectus officiis doloribus pariatur magni deserunt
-                    debitis repellat, architecto ipsa, earum beatae sapiente laudantium? Sequi, quidem!</div>
-                <div class="tab-pane fade" id="nav-alcohol">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nobis, ducimus nemo a voluptas nesciunt ratione facilis voluptatum distinctio neque autem aspernatur
-                    quasi ut maxime suscipit incidunt harum deserunt. Impedit commodi sint nemo! Ipsum fugit cupiditate
-                    nisi commodi sit sequi itaque ducimus provident accusamus eum corporis, quia nulla magnam repellat
-                    quidem tenetur quam a, fuga placeat nihil voluptates eaque. Omnis, nulla. Est quo obcaecati vero
-                    tenetur aliquam, tempore nulla sint illum quas culpa nostrum, sequi voluptas quibusdam harum aut!
-                    Soluta ducimus nesciunt esse nulla, iusto delectus officiis doloribus pariatur magni deserunt
-                    debitis repellat, architecto ipsa, earum beatae sapiente laudantium? Sequi, quidem!</div>
-                <div class="tab-pane fade" id="nav-coffee">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nobis, ducimus nemo a voluptas nesciunt ratione facilis voluptatum distinctio neque autem aspernatur
-                    quasi ut maxime suscipit incidunt harum deserunt. Impedit commodi sint nemo! Ipsum fugit cupiditate
-                    nisi commodi sit sequi itaque ducimus provident accusamus eum corporis, quia nulla magnam repellat
-                    quidem tenetur quam a, fuga placeat nihil voluptates eaque. Omnis, nulla. Est quo obcaecati vero
-                    tenetur aliquam, tempore nulla sint illum quas culpa nostrum, sequi voluptas quibusdam harum aut!
-                    Soluta ducimus nesciunt esse nulla, iusto delectus officiis doloribus pariatur magni deserunt
-                    debitis repellat, architecto ipsa, earum beatae sapiente laudantium? Sequi, quidem!</div>
+                <div class="tab-pane fade" id="nav-dinner"></div>
+                <div class="tab-pane fade" id="nav-alcohol"></div>
+                <div class="tab-pane fade" id="nav-coffee"></div>
             </div>
         </div>
     </section>
@@ -315,15 +285,15 @@ include_once('api.php');
                         <a href="https://github.com/jeffreyyau93" target="_blank" class="text-light"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
                         <a href="https://www.linkedin.com/in/jeffreyyau93" target="_blank" class="text-light"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;
                         <a href="" target="_blank" class="text-light"><i class="fab fa-behance"></i></a>&nbsp;&nbsp;
-                        <a href="" class="text-light" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fas fa-sign-in-alt"></i></a>
+                        <a href="" class="text-light" data-toggle="modal" data-target="#login-modal" data-whatever="@mdo"><i class="fas fa-sign-in-alt"></i></a>
                     </div>
                     <span class="font-weight-light">Copyright &copy; 2019 jeffreyyau93</span>
                     <!-- admin login modal start -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
-                        <div class="modal-dialog">
+                    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
-                                <div class="modal-header text-center">
-                                    <h5 class="modal-title text-dark w-100" id="exampleModalLabel">管理員登入</h5>
+                                <div class="modal-header text-center border-0">
+                                    <h5 class="modal-title text-dark w-100" id="login-modal-label">管理員登入</h5>
                                     <!-- <button type="button" class="close" data-dismiss="modal">
                                         <span>&times;</span>
                                     </button> -->
@@ -332,14 +302,14 @@ include_once('api.php');
                                     <div class="modal-body">
                                         <div class="form-group">
                                             <label for="admin-account" class="col-form-label">帳號</label>
-                                            <input type="text" class="form-control" id="admin-account" name="acc">
+                                            <input type="text" class="form-control" id="admin-account" name="acc" placeholder="admin">
                                         </div>
                                         <div class="form-group">
                                             <label for="password-text" class="col-form-label">密碼</label>
-                                            <input type="password" class="form-control" id="password-text" name="pwd">
+                                            <input type="password" class="form-control" id="password-text" name="pwd" placeholder="1234">
                                         </div>
                                     </div>
-                                    <div class="modal-footer justify-content-center">
+                                    <div class="modal-footer justify-content-center border-0">
                                         <button type="submit" class="btn btn-dark">登入</button>
                                         <button type="button" class="btn btn-dark" data-dismiss="modal">取消</button>
                                     </div>
