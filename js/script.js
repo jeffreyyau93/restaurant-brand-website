@@ -1,4 +1,7 @@
-// AOS.init();
+AOS.init({
+    offset: 400,
+    duration: 1000
+});
 
 // let navbar = document.getElementById('navbar');
 // let about = document.getElementById('about');

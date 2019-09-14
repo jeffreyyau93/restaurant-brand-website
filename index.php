@@ -12,12 +12,14 @@ include_once('api.php');
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400&display=swap&subset=chinese-traditional" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
     <!-- <link rel="stylesheet" href="css/all.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.4.1.js" defer></script>
     <script src="js/popper.min.js" defer></script>
     <script src="js/bootstrap.js" defer></script>
     <script src="js/all.js" defer></script>
+    <script src="js/aos.js" defer></script>
     <script src="js/script.js" defer></script>
     <title>Pierre Stone</title>
 </head>
@@ -112,7 +114,7 @@ include_once('api.php');
                 <h1 class="font-weight-light">關於Pierre Stone</h1>
                 <p class="font-weight-lightest">認識兩位創辦人</p>
             </div>
-            <div class="d-flex flex-column align-items-center p-5 mb-5 ps-bg-light shadow-heavy rounded-corner text-dark">
+            <div class="d-flex flex-column align-items-center p-5 mb-5 ps-bg-light shadow-heavy rounded-corner text-dark" data-aos="fade-left">
                 <img src="img/about_pierre.jpg" class=" rounded-circle w-50 py-5">
                 <h3 class="pb-3">
                     <span class="font-weight-lightest">主廚</span>&nbsp;Pierre Wang
@@ -121,7 +123,7 @@ include_once('api.php');
                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                 </p>
             </div>
-            <div class="d-flex flex-column align-items-center p-5 ps-bg-dark shadow-heavy rounded-corner text-light">
+            <div class="d-flex flex-column align-items-center p-5 ps-bg-dark shadow-heavy rounded-corner text-light" data-aos="fade-right">
                 <img src="img/about_stone.jpg" class=" rounded-circle w-50 py-5">
                 <h3 class="pb-3">
                     <span class="font-weight-lightest">經理</span>&nbsp;Francis Stone
@@ -158,7 +160,7 @@ include_once('api.php');
                 <div class="tab-pane fade show active" id="nav-lunch">
                     <div class="row d-flex flex-row m-0 p-0">
                         <div class="card-group">
-                            <div class="card">
+                            <div class="card" data-aos="flip-down">
                                 <img src="img/card_1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
@@ -166,7 +168,7 @@ include_once('api.php');
                                         lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-aos="flip-up" data-aos-offset="400" data-aos-duration="1500">
                                 <img src="img/card_2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
@@ -174,7 +176,7 @@ include_once('api.php');
                                         additional content.</p>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-aos="flip-down" data-aos-offset="400" data-aos-duration="2000">
                                 <img src="img/card_3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
