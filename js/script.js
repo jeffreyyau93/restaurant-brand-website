@@ -3,8 +3,14 @@ AOS.init({
     duration: 1000
 });
 
-$(window).on('load', function() {
-    $('#loading').fadeOut(2000);
+$(window).on("load", function() {
+    $("#loading").fadeOut(2000);
+});
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true,
+    easing: "easeInOutQuad"
 });
 
 // let navbar = document.getElementById('navbar');

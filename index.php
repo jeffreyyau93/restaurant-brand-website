@@ -20,15 +20,16 @@ include_once('api.php');
     <script src="js/bootstrap.js" defer></script>
     <script src="js/all.js" defer></script>
     <script src="js/aos.js" defer></script>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
     <script src="js/script.js" defer></script>
     <title>Pierre Stone</title>
 </head>
 
 <body>
     <!-- loading screen start -->
-    <div id="loading">
+    <!-- <div id="loading">
         <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-    </div>
+    </div> -->
     <!-- loading screen end -->
 
     <!-- navbar start -->
@@ -174,7 +175,7 @@ include_once('api.php');
                                         lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                             </div>
-                            <div class="card" data-aos="flip-up" data-aos-offset="400" data-aos-duration="1500">
+                            <div class="card" data-aos="flip-down" data-aos-offset="400" data-aos-duration="2000">
                                 <img src="img/card_2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
@@ -182,7 +183,7 @@ include_once('api.php');
                                         additional content.</p>
                                 </div>
                             </div>
-                            <div class="card" data-aos="flip-down" data-aos-offset="400" data-aos-duration="2000">
+                            <div class="card" data-aos="flip-down" data-aos-offset="400" data-aos-duration="3000">
                                 <img src="img/card_3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
