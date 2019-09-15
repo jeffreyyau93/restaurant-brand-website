@@ -2,6 +2,7 @@ html * {
     font-family: "Noto Sans TC", "Microsoft JhengHei";
 }
 
+/* loading screen block */
 #loading {
     width: 100vw;
     height: 100vh;
@@ -54,30 +55,61 @@ ul.navbar-link {
     position: relative;
     transition: color 0.35s ease;
 }
+button.navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
 .ps-sh {
     width: 72px;
 }
-.ps-sh:hover, .ps-sh:focus {
+.ps-sh:hover,
+.ps-sh:focus {
     filter: drop-shadow(0px 0px 10px #fff);
 }
 
+/* carousel block */
+.carousel-item > img:first-child {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.9);
+}
+.carousel-caption {
+    bottom: 100px;
+}
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 7s ease;
+    transition: transform 7s ease;
+    transition: transform 7s ease, -webkit-transform 7s ease;
+}
 .hero {
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
 }
 
-.carousel-inner .carousel-item {
-    transition: -webkit-transform 7s ease;
-    transition: transform 7s ease;
-    transition: transform 7s ease, -webkit-transform 7s ease;
-}
-
+/* about block */
 #about {
+    position: relative;
+}
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url("../img/spice.jpg");
     background-size: cover;
+    filter: brightness(0.8);
+}
+.about-inside {
+    position: relative;
 }
 
+/* menu block */
 #menu-tab {
     /* background: #fff; */
     border-bottom: 1px solid #f2f2f2;
@@ -99,35 +131,35 @@ ul.navbar-link {
     text-decoration: none;
 }
 
-button.navbar-toggler {
-    outline: none !important;
-    box-shadow: none !important;
-    border: none !important;
-}
-
-.carousel-item > img:first-child {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    filter: brightness(0.9);
-}
-
-.carousel-caption {
-    bottom: 100px;
-}
-
 /* custom color block */
-.ps-bg-dark {
-    background: #21212199 !important;
-}
-
 .ps-dark {
     background: #222 !important;
 }
 
+.ps-bg-dark {
+    background: #16161699 !important;
+}
+
 .ps-bg-light {
-    background: #e3e3e3ee !important;
+    background: #f8f8f8 !important;
+}
+
+.ps-text-dark {
+    color: #222;
+}
+
+.ps-text-light {
+    color: #efefef;
+}
+
+.ps-text-gilded {
+    color: #b99c5d;
+}
+
+.btn-ps {
+    color: #fff;
+    background-color: #b99c5d;
+    border-color: #b99c5d;
 }
 
 .font-weight-lightest {
@@ -140,6 +172,19 @@ button.navbar-toggler {
 
 .shadow-heavy {
     box-shadow: 0.3rem 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+}
+
+.title-shadow {
+    text-shadow: 2px 2px 4px #0009;
+}
+
+.to-top {
+    z-index: 9999;
+}
+
+#contact a:hover {
+    color: #fff !important;
+    text-decoration: none !important;
 }
 
 /* loading screen */

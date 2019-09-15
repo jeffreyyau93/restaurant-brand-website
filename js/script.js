@@ -8,7 +8,7 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
-    jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000;
+    jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 7000;
 });
 
 let scroll = new SmoothScroll('a[href*="#"]', {
