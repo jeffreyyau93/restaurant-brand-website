@@ -7,11 +7,52 @@ $(window).on("load", function() {
     $("#loading").fadeOut(2000);
 });
 
-var scroll = new SmoothScroll('a[href*="#"]', {
+let scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1000,
     speedAsDuration: true,
     easing: "easeInOutQuad"
 });
+
+// Hide/show navbar
+let didScroll;
+let lastScrollTop = 0;
+let delta = 5;
+let navbarHeight = $('nav').outerHeight();
+
+$(window).scroll(function(event) {
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    let st = $(this).scrollTop();
+    // Make sure they scroll more than delta
+    if (Math.abs(lastScrollTop - st) <= delta) return;
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        $('nav')
+            .removeClass('show-nav')
+            .addClass('hide-nav');
+        $('.nav-toggle').removeClass('open');
+        $('.menu-left').removeClass('collapse');
+    } else {
+        // Scroll Up
+        if (st + $(window).height() < $(document).height()) {
+            $('nav')
+                .removeClass('hide-nav')
+                .addClass('show-nav');
+        }
+    }
+    lastScrollTop = st;
+}
 
 // let navbar = document.getElementById('navbar');
 // let about = document.getElementById('about');
