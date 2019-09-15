@@ -25,6 +25,12 @@ include_once('api.php');
 </head>
 
 <body>
+    <!-- loading screen start -->
+    <div id="loading">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <!-- loading screen end -->
+
     <!-- navbar start -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top p-0">
         <div class="d-flex flex-grow-1">

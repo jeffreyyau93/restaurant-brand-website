@@ -3,6 +3,10 @@ AOS.init({
     duration: 1000
 });
 
+$(window).on('load', function() {
+    $('#loading').fadeOut(2000);
+});
+
 // let navbar = document.getElementById('navbar');
 // let about = document.getElementById('about');
 
