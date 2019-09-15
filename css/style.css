@@ -67,6 +67,12 @@ ul.navbar-link {
     transform: translate(50%, -50%);
 }
 
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 7s ease;
+    transition: transform 7s ease;
+    transition: transform 7s ease, -webkit-transform 7s ease;
+}
+
 #about {
     background-image: url("../img/spice.jpg");
     background-size: cover;
@@ -108,7 +114,7 @@ button.navbar-toggler {
 }
 
 .carousel-caption {
-    bottom: 200px;
+    bottom: 100px;
 }
 
 /* custom color block */
@@ -190,5 +196,46 @@ button.navbar-toggler {
     }
     100% {
         transform: translate(19px, 0);
+    }
+}
+
+.zoom {
+    animation: zoom 15s ease 0s normal both infinite;
+    -webkit-animation: zoom 15s ease 0s normal both infinite;
+    -moz-animation: zoom 15s ease 0s normal both infinite;
+    -ms-animation: zoom 15s ease 0s normal both infinite;
+    -o-animation: zoom 15s ease 0s normal both infinite;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
     }
 }

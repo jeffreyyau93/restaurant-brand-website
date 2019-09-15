@@ -7,6 +7,10 @@ $(window).on("load", function() {
     $("#loading").fadeOut(2000);
 });
 
+$(document).ready(function() {
+    jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000;
+});
+
 let scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1000,
     speedAsDuration: true,
@@ -17,7 +21,7 @@ let scroll = new SmoothScroll('a[href*="#"]', {
 let didScroll;
 let lastScrollTop = 0;
 let delta = 5;
-let navbarHeight = $('nav').outerHeight();
+let navbarHeight = $("nav").outerHeight();
 
 $(window).scroll(function(event) {
     didScroll = true;
@@ -38,17 +42,17 @@ function hasScrolled() {
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight) {
         // Scroll Down
-        $('nav')
-            .removeClass('show-nav')
-            .addClass('hide-nav');
-        $('.nav-toggle').removeClass('open');
-        $('.menu-left').removeClass('collapse');
+        $("nav")
+            .removeClass("show-nav")
+            .addClass("hide-nav");
+        $(".nav-toggle").removeClass("open");
+        $(".menu-left").removeClass("collapse");
     } else {
         // Scroll Up
         if (st + $(window).height() < $(document).height()) {
-            $('nav')
-                .removeClass('hide-nav')
-                .addClass('show-nav');
+            $("nav")
+                .removeClass("hide-nav")
+                .addClass("show-nav");
         }
     }
     lastScrollTop = st;
