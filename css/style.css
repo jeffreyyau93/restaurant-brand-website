@@ -189,7 +189,11 @@ button.navbar-toggler {
 }
 .menu-card {
     max-width: 300px;
-    max-height: 400px;
+    max-height: 600px;
+}
+.menu-card:hover {
+    transform: scale(1.1, 1.1);
+    z-index: 9999;
 }
 .menu-img {
     width: 100%;
@@ -200,21 +204,8 @@ button.navbar-toggler {
 
 /* reservation block */
 #reservation {
-    position: relative;
-}
-#reservation::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: url("../img/bar.jpg");
     background-size: cover;
-    filter: brightness(0.8);
-}
-.reservation-inside {
-    position: relative;
 }
 
 /* contact block */
@@ -265,6 +256,11 @@ button.navbar-toggler {
 .to-top {
     z-index: 9999;
 }
+@media (min-width: 992px) {
+	.vh-lg-100 {
+		height: 100vh !important;
+	}
+}
 
 .zoom {
     animation: zoom 15s ease 0s normal both infinite;
@@ -305,4 +301,10 @@ button.navbar-toggler {
     100% {
         transform: scale(1, 1);
     }
+}
+
+/* admin.php start */
+.admin-img {
+    width: 300px;
+    height: auto;
 }

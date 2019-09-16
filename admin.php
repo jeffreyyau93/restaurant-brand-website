@@ -9,6 +9,7 @@ include_once('sql.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
@@ -35,7 +36,7 @@ include_once('sql.php');
                             <?= $row["id"] ?>
                         </td>
                         <td>
-                            <img src="<?= $row["img"] ?>" alt="">
+                            <img src="<?= $row["img"] ?>" class="admin-img" alt="">
                             <input type="file" name="img[<?= $row["id"] ?>]" id="">
                         </td>
                         <td>
@@ -59,7 +60,7 @@ include_once('sql.php');
         <input type="submit">
         <!-- 刪除 -->
         <?php
-        $newname = 
+        $newname =
         unlink("img/".$newname);
         ?>
         <input type="button" names="">

@@ -145,7 +145,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
     <!-- about end -->
 
     <!-- menu start -->
-    <section id="menu" class="container-fluid d-flex flex-column align-items-center p-0 pb-5">
+    <section id="menu" class="container-fluid vh-lg-100 d-flex flex-column align-items-center p-0 pb-5">
         <div class="row py-5 m-0 w-100">
             <div class="col text-center text-dark p-0">
                 <h1 class="">餐點介紹</h1>
@@ -165,7 +165,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
             <div class="tab-content bg-white d-flex justify-content-center bg-transparent" id="menu-tab-content">
                 <div class="tab-pane fade show active" id="nav-lunch">
                     <div class="row d-flex flex-row m-0 p-0">
-                        <div class="card-group">
+                        <div class="card-deck">
                             <?php
                             foreach ($rows as $row) {
                                 if ($row["category"] == "lunch") {
@@ -204,7 +204,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                 </div>
                 <div class="tab-pane fade" id="nav-dinner">
                     <div class="row d-flex flex-row m-0 p-0">
-                        <div class="card-group">
+                        <div class="card-deck">
                             <?php
                             foreach ($rows as $row) {
                                 if ($row["category"] == "dinner") {
@@ -225,7 +225,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                 </div>
                 <div class="tab-pane fade" id="nav-alcohol">
                     <div class="row d-flex flex-row m-0 p-0">
-                        <div class="card-group">
+                        <div class="card-deck">
                             <?php
                             foreach ($rows as $row) {
                                 if ($row["category"] == "drink") {
@@ -246,7 +246,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                 </div>
                 <div class="tab-pane fade" id="nav-coffee">
                     <div class="row d-flex flex-row m-0 p-0">
-                        <div class="card-group">
+                        <div class="card-deck">
                             <?php
                             foreach ($rows as $row) {
                                 if ($row["category"] == "coffee") {
@@ -271,11 +271,12 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
     <!-- menu end -->
 
     <!-- reservation start -->
-    <section id="reservation" class="container-fluid px-0 pb-5">
-        <div class="reservation-inside">nothing</div>
+    <section id="reservation" class="container-fluid px-0">
         <div class="container table-responsive py-5">
-            <h1 class="text-center text-dark">預約訂位</h1>
-            <h5 class="text-center ps-text-gilded pb-5">請選擇時間、人數，並留下您的聯絡資訊</h5>
+            <div class="w-100 text-center mx-auto title-shadow">
+                <h1 class="text-center text-light">預約訂位</h1>
+                <h5 class="text-center ps-text-gilded pb-5">請選擇時間、人數，並留下您的聯絡資訊</h5>
+            </div>
             <form class="needs-validation pt-5" novalidate>
                 <table class="table table-light table-hover table-striped">
                     <tr>
