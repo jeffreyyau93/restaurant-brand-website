@@ -1,6 +1,8 @@
-<?php
+<!-- <?php
 include_once('api.php');
-?>
+$rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
+// print_r($menu);
+?> -->
 <!DOCTYPE html>
 <html lang="zh-tw">
 
@@ -143,147 +145,123 @@ include_once('api.php');
     <!-- about end -->
 
     <!-- menu start -->
-    <section id="menu" class="container-fluid p-0 p-lg-5">
-        <div class="row pt-5 pb-5 w-100">
-            <div class="col col-md-12 text-center text-dark">
+    <section id="menu" class="container-fluid d-flex flex-column align-items-center p-0 pb-5">
+        <div class="row py-5 m-0 w-100">
+            <div class="col text-center text-dark p-0">
                 <h1 class="">餐點介紹</h1>
                 <h5 class="ps-text-gilded">探索 Pierre Stone 的時令佳餚</h5>
             </div>
         </div>
 
-        <div class="container d-flex flex-column justify-content-center p-0">
+        <div class="container d-flex flex-column justify-content-center align-items-center m-0 p-0 py-5">
             <div class="row w-100 d-flex justify-content-center pb-5">
-                <!-- <div class="col-4"></div> -->
-                <div class="col-8 col-lg-4 nav d-flex justify-content-around ps-bg-light p-0 m-0 border-0 rounded-corner" id="menu-tab">
-                    <a class="active text-dark" id="nav-home-tab" data-toggle="tab" href="#nav-lunch">午餐</a>
-                    <a class="text-dark" id="nav-profile-tab" data-toggle="tab" href="#nav-dinner">晚餐</a>
-                    <a class="text-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-alcohol">酒類</a>
-                    <a class="text-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-coffee">咖啡</a>
+                <div class="col-8 col-lg-4 nav d-flex justify-content-around bg-dark p-0 m-0 border-0 rounded-corner" id="menu-tab">
+                    <a class="active text-light font-weight-lightest" id="nav-home-tab" data-toggle="tab" href="#nav-lunch">午餐</a>
+                    <a class="text-light font-weight-lightest" id="nav-profile-tab" data-toggle="tab" href="#nav-dinner">晚餐</a>
+                    <a class="text-light font-weight-lightest" id="nav-contact-tab" data-toggle="tab" href="#nav-alcohol">酒類</a>
+                    <a class="text-light font-weight-lightest" id="nav-contact-tab" data-toggle="tab" href="#nav-coffee">咖啡</a>
                 </div>
-                <!-- <div class="col-4"></div> -->
             </div>
-            <div class="tab-content bg-white" id="menu-tab-content">
+            <div class="tab-content bg-white d-flex justify-content-center bg-transparent" id="menu-tab-content">
                 <div class="tab-pane fade show active" id="nav-lunch">
                     <div class="row d-flex flex-row m-0 p-0">
                         <div class="card-group">
-                            <div class="card" data-aos="flip-down">
-                                <img src="img/Croque-Monsieur.jpg" class="card-img-top menu-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title ps-text-gilded">前菜</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="flip-down" data-aos-offset="400" data-aos-duration="2000">
+                            <?php
+                            foreach ($rows as $row) {
+                                if ($row["category"] == "lunch") {
+                                    echo '
+                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-down">
+                                            <img src="'.$row["img"].'" class="card-img-top menu-img" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title ps-text-gilded">'.$row["name"].'</h5>
+                                                <p class="card-text">'.$row["info"].'</p>
+                                            </div>
+                                        </div>
+                                    ';
+                                }
+                            }
+                            ?>
+                            <!-- <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-down" data-aos-offset="400" data-aos-duration="2000">
                                 <img src="img/Boeuf Bourguignon.jpg" class="card-img-top menu-img" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title ps-text-gilded">主菜</h5>
-                                    <p class="card-text">This card has supporting text below as a natural lead-in to
-                                        additional content.</p>
+                                    <h5 class="card-title ps-text-gilded">紅酒燉牛肉</h5>
+                                    <p class="card-text">
+                                        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="card" data-aos="flip-down" data-aos-offset="400" data-aos-duration="3000">
+                            <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-down" data-aos-offset="400" data-aos-duration="3000">
                                 <img src="img/Tarte Tatin.jpg" class="card-img-top menu-img" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title ps-text-gilded">甜點</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This card has even longer content than the first
-                                        to show that equal height action.</p>
+                                    <h5 class="card-title ps-text-gilded">反烤蘋果塔</h5>
+                                    <p class="card-text">
+                                        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                    </p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-dinner">
                     <div class="row d-flex flex-row m-0 p-0">
                         <div class="card-group">
-                            <div class="card" data-aos="flip-down">
-                                <img src="img/Coq au Vin.jpg" class="card-img-top menu-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title ps-text-gilded">前菜</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="flip-down" data-aos-offset="400" data-aos-duration="2000">
-                                <img src="img/Steak Frites.jpg" class="card-img-top menu-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title ps-text-gilded">主菜</h5>
-                                    <p class="card-text">This card has supporting text below as a natural lead-in to
-                                        additional content.</p>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="flip-down" data-aos-offset="400" data-aos-duration="3000">
-                                <img src="img/Clafoutis.jpg" class="card-img-top menu-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title ps-text-gilded">甜點</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This card has even longer content than the first
-                                        to show that equal height action.</p>
-                                </div>
-                            </div>
+                            <?php
+                            foreach ($rows as $row) {
+                                if ($row["category"] == "dinner") {
+                                    echo '
+                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-down">
+                                            <img src="'.$row["img"].'" class="card-img-top menu-img" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title ps-text-gilded">'.$row["name"].'</h5>
+                                                <p class="card-text">'.$row["info"].'</p>
+                                            </div>
+                                        </div>
+                                    ';
+                                }
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-alcohol">
                     <div class="row d-flex flex-row m-0 p-0">
                         <div class="card-group">
-                            <div class="card" data-aos="flip-down">
-                                <img src="img/beer.jpg" class="card-img-top menu-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title ps-text-gilded">啤酒</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="flip-down" data-aos-offset="400" data-aos-duration="2000">
-                                <img src="img/liquor.jpg" class="card-img-top menu-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title ps-text-gilded">烈酒</h5>
-                                    <p class="card-text">This card has supporting text below as a natural lead-in to
-                                        additional content.</p>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="flip-down" data-aos-offset="400" data-aos-duration="3000">
-                                <img src="img/wine.jpg" class="card-img-top menu-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title ps-text-gilded">葡萄酒</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This card has even longer content than the first
-                                        to show that equal height action.</p>
-                                </div>
-                            </div>
+                            <?php
+                            foreach ($rows as $row) {
+                                if ($row["category"] == "drink") {
+                                    echo '
+                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-down">
+                                            <img src="'.$row["img"].'" class="card-img-top menu-img" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title ps-text-gilded">'.$row["name"].'</h5>
+                                                <p class="card-text">'.$row["info"].'</p>
+                                            </div>
+                                        </div>
+                                    ';
+                                }
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-coffee">
                     <div class="row d-flex flex-row m-0 p-0">
                         <div class="card-group">
-                            <div class="card" data-aos="flip-down">
-                                <img src="img/beer.jpg" class="card-img-top menu-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title ps-text-gilded">啤酒</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="flip-down" data-aos-offset="400" data-aos-duration="2000">
-                                <img src="img/liquor.jpg" class="card-img-top menu-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title ps-text-gilded">烈酒</h5>
-                                    <p class="card-text">This card has supporting text below as a natural lead-in to
-                                        additional content.</p>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="flip-down" data-aos-offset="400" data-aos-duration="3000">
-                                <img src="img/wine.jpg" class="card-img-top menu-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title ps-text-gilded">葡萄酒</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This card has even longer content than the first
-                                        to show that equal height action.</p>
-                                </div>
-                            </div>
+                            <?php
+                            foreach ($rows as $row) {
+                                if ($row["category"] == "coffee") {
+                                    echo '
+                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-down">
+                                            <img src="'.$row["img"].'" class="card-img-top menu-img" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title ps-text-gilded">'.$row["name"].'</h5>
+                                                <p class="card-text">'.$row["info"].'</p>
+                                            </div>
+                                        </div>
+                                    ';
+                                }
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -293,11 +271,12 @@ include_once('api.php');
     <!-- menu end -->
 
     <!-- reservation start -->
-    <section id="reservation" class="container-fluid px-0">
-        <div class="container table-responsive">
+    <section id="reservation" class="container-fluid px-0 pb-5">
+        <div class="reservation-inside">nothing</div>
+        <div class="container table-responsive py-5">
             <h1 class="text-center text-dark">預約訂位</h1>
             <h5 class="text-center ps-text-gilded pb-5">請選擇時間、人數，並留下您的聯絡資訊</h5>
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation pt-5" novalidate>
                 <table class="table table-light table-hover table-striped">
                     <tr>
                         <td>
