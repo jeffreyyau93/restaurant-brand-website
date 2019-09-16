@@ -214,6 +214,22 @@ button.navbar-toggler {
     text-decoration: none !important;
 }
 
+/* scroll to top button */
+#btn-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 45px;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    background: #b99c5d;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    display: none;
+}
+
 /* custom color block */
 .ps-dark {
     background: #222 !important;

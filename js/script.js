@@ -3,8 +3,23 @@ AOS.init({
     duration: 1000
 });
 
+// Loading screen
 $(window).on("load", function() {
     $("#loading").fadeOut(2000);
+});
+
+// Scroll to top button
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {// when scroll to near bottom of the page
+            $("#btn-to-top").fadeIn();
+        } else {
+            $("#btn-to-top").fadeOut();
+        }
+    });
+    $("#btn-to-top").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 800);
+    });
 });
 
 $(document).ready(function() {

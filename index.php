@@ -1,8 +1,8 @@
-<!-- <?php
+<?php
 include_once('api.php');
 $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
 // print_r($menu);
-?> -->
+?>
 <!DOCTYPE html>
 <html lang="zh-tw">
 
@@ -442,6 +442,9 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
         </div>
     </section>
     <!-- contact end -->
+
+    <!-- scroll to top button -->
+    <button id="btn-to-top"><i class="fas fa-chevron-up"></i></button> 
 </body>
 
 </html>
