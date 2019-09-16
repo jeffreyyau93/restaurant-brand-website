@@ -5,7 +5,7 @@ AOS.init({
 
 // Loading screen
 $(window).on("load", function() {
-    $("#loading").fadeOut(2000);
+    $("#loading").delay(500).fadeOut(1500);
 });
 
 // Scroll to top button
