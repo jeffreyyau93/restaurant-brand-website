@@ -27,7 +27,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
     <title>Pierre Stone</title>
 </head>
 
-<body>
+<body class="bg-dark">
     <!-- loading screen start -->
     <div id="loading">
         <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
@@ -180,7 +180,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                             foreach ($rows as $row) {
                                 if ($row["category"] == "lunch") {
                                     echo '
-                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration="1000">
+                                        <div class="card menu-card rounded-corner-s overflow-hidden shadow-heavy" data-aos="flip-right" data-aos-delay="500" data-aos-duration="1000">
                                             <img src="'.$row["img"].'" class="card-img-top menu-img" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title ps-text-gilded">'.$row["name"].'</h5>
@@ -191,7 +191,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                                 }
                             }
                             ?>
-                            <!-- <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000" data-aos-offset="400" data-aos-duration="2000">
+                            <!-- <div class="card menu-card rounded-corner-s overflow-hidden shadow-heavy" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000" data-aos-offset="400" data-aos-duration="2000">
                                 <img src="img/Boeuf Bourguignon.jpg" class="card-img-top menu-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title ps-text-gilded">紅酒燉牛肉</h5>
@@ -200,7 +200,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                                     </p>
                                 </div>
                             </div>
-                            <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000" data-aos-offset="400" data-aos-duration="3000">
+                            <div class="card menu-card rounded-corner-s overflow-hidden shadow-heavy" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000" data-aos-offset="400" data-aos-duration="3000">
                                 <img src="img/Tarte Tatin.jpg" class="card-img-top menu-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title ps-text-gilded">反烤蘋果塔</h5>
@@ -219,7 +219,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                             foreach ($rows as $row) {
                                 if ($row["category"] == "dinner") {
                                     echo '
-                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000">
+                                        <div class="card menu-card rounded-corner-s overflow-hidden shadow-heavy" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000">
                                             <img src="'.$row["img"].'" class="card-img-top menu-img" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title ps-text-gilded">'.$row["name"].'</h5>
@@ -240,7 +240,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                             foreach ($rows as $row) {
                                 if ($row["category"] == "drink") {
                                     echo '
-                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000">
+                                        <div class="card menu-card rounded-corner-s overflow-hidden shadow-heavy" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000">
                                             <img src="'.$row["img"].'" class="card-img-top menu-img" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title ps-text-gilded">'.$row["name"].'</h5>
@@ -261,7 +261,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                             foreach ($rows as $row) {
                                 if ($row["category"] == "coffee") {
                                     echo '
-                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000">
+                                        <div class="card menu-card rounded-corner-s overflow-hidden shadow-heavy" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000">
                                             <img src="'.$row["img"].'" class="card-img-top menu-img" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title ps-text-gilded">'.$row["name"].'</h5>
@@ -288,9 +288,9 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                 <h5 class="text-center ps-text-gilded">請選擇時間、人數，並留下您的聯絡資訊</h5>
             </div>
             <form class="needs-validation pt-5" novalidate>
-                <table class="table table-light table-hover table-striped">
+                <table class="table table-light table-hover table-striped rounded-corner">
                     <tr>
-                        <td>
+                        <td class="border-0">
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">姓名</label>
                                 <input id="name" type="input" class="form-control" required>
@@ -384,7 +384,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
             <div class="col-lg-6 d-none d-lg-block p-0 h-100">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.702152324414!2d121.41729491542732!3d25.044180083967518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bed3dc9b59%3A0x57e6439a2db0fa2a!2zMjQzLCBOZXcgVGFpcGVpIENpdHksIFRhaXNoYW4gRGlzdHJpY3QsIOazsOWxseiBt-iok-S4reW_gw!5e0!3m2!1sen!2stw!4v1567655958210!5m2!1sen!2stw" frameborder="0" allowfullscreen="true" class="w-100 h-100 border-0"></iframe>
             </div>
-            <div class="col col-lg-6 h100 d-flex flex-column align-items-left justify-content-around mx-0 p-2 p">
+            <div class="col col-lg-6 h100 container d-flex flex-column align-items-left justify-content-around mx-0 px-lg-5">
                 <div class="w-100 mx-auto text-center">
                     <h2 class="font-weight-light ps-text-gilded">聯絡我們</h2>
                 </div>

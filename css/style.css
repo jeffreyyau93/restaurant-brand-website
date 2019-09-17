@@ -336,9 +336,3 @@ button.navbar-toggler {
         transform: scale(1, 1);
     }
 }
-
-/* admin.php start */
-.admin-img {
-    width: 300px;
-    height: auto;
-}

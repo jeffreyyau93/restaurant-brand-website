@@ -1,0 +1,16 @@
+
+/* admin.php start */
+body {
+    background: #222;
+    color: #fff;
+}
+
+#ps-sh {
+    width: 100px;
+    height: auto;
+}
+
+.admin-img {
+    width: 300px;
+    height: auto;
+}
