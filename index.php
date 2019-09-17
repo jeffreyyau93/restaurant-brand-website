@@ -109,36 +109,46 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
 
     <!-- about start -->
     <section id="about" class="container-fluid overflow-hidden">
-        <div class="about-inside">nothing</div>
-        <div class="row py-5 justify-content-center text-light h-100">
-            <div class="text-center mb-5 to-top title-shadow">
+        <div class="about-inside"></div>
+        <div class="container d-flex flex-column align-items-center py-5 text-light">
+            <div class="text-center my-5 pb-5 to-top title-shadow">
                 <h1 class="font-weight-light">關於Pierre Stone</h1>
                 <h5 class="font-weight-light ps-text-gilded">認識兩位創辦人</h5>
             </div>
             <div class="d-flex flex-column align-items-center p-5 mb-5 ps-bg-dark shadow-heavy rounded-corner text-light" data-aos="fade-right">
-                <p class="font-weight-lightest">
+                <p class="font-weight-lightest px-lg-5">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ps-text-gilded"><strong>Pierre Stone</strong></span> 的故事同時也是兩位對美食充滿熱情的合夥人在業界一路奮鬥，並且相遇的過程。兩人對料理的無限想像互相激盪，不斷擦碰出創意的火花，也造就了這間小而精美的法式酒館。Pierre Stone堅持親民合理的價格以及決不對品質妥協的理念，讓有各種需求的客人都能得到近乎獨享的個人體驗。
                 </p>
             </div>
-            <div class="d-flex flex-column align-items-center p-5 mb-5 ps-bg-dark shadow-heavy rounded-corner text-light" data-aos="fade-left">
-                <img src="img/about_pierre.jpg" class="rounded-circle w-50 py-5">
-                <div>
-                    <h3 class="pb-3">
-                        <span class="font-weight-lightest ps-text-gilded">主廚</span>&nbsp;&nbsp;Pierre Wang
-                    </h3>
+            <div class="w-100 row flex-column flex-lg-row justify-content-center align-items-center mb-5 px-lg-5 ps-bg-dark shadow-heavy rounded-corner text-light about-module" data-aos="fade-left">
+                <div class="module-img col col-lg-4 text-center h-100 p-5">
+                    <img src="img/about_pierre.jpg" class="rounded-circle w-50 w-md-80 w-lg-100">
+                </div>
+                <div class="col col-lg-8 px-5 pb-5 py-lg-5">
+                    <div class="w-100 mx-auto text-center text-lg-left">
+                        <h3 class="pb-3">
+                            <span class="font-weight-lightest ps-text-gilded">主廚</span>&nbsp;&nbsp;Pierre Wang
+                        </h3>
+                    </div>
                     <p class="font-weight-lightest">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行政主廚Pierre Wang擁有10年以上專業法式料理經驗，曾在巴黎、倫敦等美食一級戰區的知名餐廳任職。在英國即將脱歐之際，面對未知的將來，他選擇返回故鄉臺灣，並期許將法式料理與眾不同的風味分享給生活在故土上的人們。Pierre為人木訥卻對烹飪懷有滿腔熱血，他渴望將自己在「料理」上的人生歷練化作一道道佳餚。
                     </p>
                 </div>
             </div>
-            <div class="d-flex flex-column align-items-center p-5 ps-bg-dark shadow-heavy rounded-corner text-light" data-aos="fade-right">
-                <img src="img/about_stone.jpg" class="rounded-circle w-50 py-5">
-                <h3 class="pb-3">
-                    <span class="font-weight-lightest ps-text-gilded">經理</span>&nbsp;&nbsp;Francis J. Stone
-                </h3>
-                <p class="font-weight-lightest">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;餐廳經理Francis J. Stone是一位成功的商人，名下擁有一間國際食品貿易公司，在英國精緻餐飲業界也一直佔有舉足輕重的地位。Pierre Stone象徵著Francis最新一波創業投資，他意圖在亞洲區開闢新戰場，而臺灣正是其東進策略的第一站。Francis從不願隨波逐流，即使身處競爭激烈的餐飲業界，他也以獨到的眼光力抗潮流，走出自己的一條路，並始終相信美食所具備的獨特價值。
-                </p>
+            <div class="w-100 row flex-column flex-lg-row justify-content-center align-items-center mb-5 px-lg-5 ps-bg-dark shadow-heavy rounded-corner text-light about-module" data-aos="fade-right">
+                <div class="module-img col col-lg-4 text-center h-100 p-5">
+                    <img src="img/about_stone.jpg" class="rounded-circle w-50 w-md-80 w-lg-100">
+                </div>
+                <div class="col col-lg-8 px-5 pb-5 p-lg-5">
+                    <div class="w-100 mx-auto text-center text-lg-left">
+                        <h3 class="pb-3">
+                            <span class="font-weight-lightest ps-text-gilded">經理</span>&nbsp;&nbsp;Francis J. Stone
+                        </h3>
+                    </div>
+                    <p class="font-weight-lightest">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;餐廳經理Francis J. Stone是一位成功的商人，名下擁有一間國際食品貿易公司，在英國精緻餐飲業界也一直佔有舉足輕重的地位。Pierre Stone象徵著Francis最新一波創業投資，他意圖在亞洲區開闢新戰場，而臺灣正是其東進策略的第一站。Francis從不願隨波逐流，即使身處競爭激烈的餐飲業界，他也以獨到的眼光力抗潮流，走出自己的一條路，並始終相信美食所具備的獨特價值。
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -146,7 +156,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
 
     <!-- menu start -->
     <section id="menu" class="container-fluid vh-lg-100 d-flex flex-column align-items-center p-0 pb-5">
-        <div class="row py-5 m-0 w-100">
+        <div class="row py-5 mt-5 w-100">
             <div class="col text-center text-dark p-0">
                 <h1 class="">餐點介紹</h1>
                 <h5 class="ps-text-gilded">探索 Pierre Stone 的時令佳餚</h5>
@@ -170,7 +180,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                             foreach ($rows as $row) {
                                 if ($row["category"] == "lunch") {
                                     echo '
-                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="zoom-out-down" data-aos-delay="1000">
+                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration="1000">
                                             <img src="'.$row["img"].'" class="card-img-top menu-img" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title ps-text-gilded">'.$row["name"].'</h5>
@@ -181,7 +191,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                                 }
                             }
                             ?>
-                            <!-- <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="zoom-out-down" data-aos-delay="1000" data-aos-offset="400" data-aos-duration="2000">
+                            <!-- <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000" data-aos-offset="400" data-aos-duration="2000">
                                 <img src="img/Boeuf Bourguignon.jpg" class="card-img-top menu-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title ps-text-gilded">紅酒燉牛肉</h5>
@@ -190,7 +200,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                                     </p>
                                 </div>
                             </div>
-                            <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="zoom-out-down" data-aos-delay="1000" data-aos-offset="400" data-aos-duration="3000">
+                            <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000" data-aos-offset="400" data-aos-duration="3000">
                                 <img src="img/Tarte Tatin.jpg" class="card-img-top menu-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title ps-text-gilded">反烤蘋果塔</h5>
@@ -209,7 +219,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                             foreach ($rows as $row) {
                                 if ($row["category"] == "dinner") {
                                     echo '
-                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="zoom-out-down" data-aos-delay="1000">
+                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000">
                                             <img src="'.$row["img"].'" class="card-img-top menu-img" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title ps-text-gilded">'.$row["name"].'</h5>
@@ -230,7 +240,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                             foreach ($rows as $row) {
                                 if ($row["category"] == "drink") {
                                     echo '
-                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="zoom-out-down" data-aos-delay="1000">
+                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000">
                                             <img src="'.$row["img"].'" class="card-img-top menu-img" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title ps-text-gilded">'.$row["name"].'</h5>
@@ -251,7 +261,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                             foreach ($rows as $row) {
                                 if ($row["category"] == "coffee") {
                                     echo '
-                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="zoom-out-down" data-aos-delay="1000">
+                                        <div class="card menu-card rounded-corner-s overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration"1000">
                                             <img src="'.$row["img"].'" class="card-img-top menu-img" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title ps-text-gilded">'.$row["name"].'</h5>
@@ -273,9 +283,9 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
     <!-- reservation start -->
     <section id="reservation" class="container-fluid px-0">
         <div class="container table-responsive py-5">
-            <div class="w-100 text-center mx-auto title-shadow">
+            <div class="w-100 text-center py-5 mx-auto title-shadow">
                 <h1 class="text-center text-light">預約訂位</h1>
-                <h5 class="text-center ps-text-gilded pb-5">請選擇時間、人數，並留下您的聯絡資訊</h5>
+                <h5 class="text-center ps-text-gilded">請選擇時間、人數，並留下您的聯絡資訊</h5>
             </div>
             <form class="needs-validation pt-5" novalidate>
                 <table class="table table-light table-hover table-striped">
