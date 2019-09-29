@@ -10,7 +10,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400&display=swap&subset=chinese-traditional" rel="stylesheet">
@@ -99,7 +99,7 @@ $rows = $db->query("SELECT * FROM `ps_menu` WHERE 1")->fetchAll();
                     <img src="img/carousel_06.jpg" class="d-block w-100 h-100" alt="...">
                 </div>
             </div>
-            <img src="img/pierre_hero.svg" class="position-absolute w-100 h-100 hero">
+            <img src="img/pierre_stone_hero.svg" class="position-absolute w-100 h-100 hero">
             <div class="carousel-caption d-block">
                 <a href="#reservation" class="btn btn-ps shadow">立即訂位</a>
             </div>

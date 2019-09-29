@@ -1,6 +1,7 @@
 <?php
 session_start();
-$db = new PDO("mysql:host=127.0.0.1;dbname=s1080208;charset=utf8", "s1080208", "s1080208", null);
+$db = new PDO("mysql:host=127.0.0.1;dbname=ps_db;charset=utf8", "root", "", null);
+// $db = new PDO("mysql:host=127.0.0.1;dbname=s1080208;charset=utf8", "s1080208", "s1080208", null);
 date_default_timezone_set("Asia/Taipei");
 
 //php轉址
