@@ -1,38 +1,49 @@
 # Restaurant Brand Website
 
-This is a restaurant brand website that I will use to explore SPA design.
+This is a single page restaurant brand website. The emphasis is on visual aesthetic and interaction with database.
 
-At the time of writing this website use dev version of Bootstrap and jQuery instead of compressed production versions.
+As of the time of writing, the admin page functions are not complete, and booking system is just an empty form.
 
 ## Acknowledgements
 
-### Images Source
+### Techniques Used
+
+* HTML
+* CSS
+* ES6
+* Bootstrap
+* jQuery
+* PHP & PDO
+* phpMyAdmin for MySQL database
+* ...and various JS plug-ins.
+
+### Image Rources
 
 Pexels
 
 <https://www.pexels.com/>
 
-They are covered by Creative Commons Zero (CC0) license; kudos to all the creators for their works, and I truly appreciate their kindness to share.
+Images are covered by **Creative Commons Zero (CC0)** license; kudos to all the creators for their works, and I truly appreciate their kindness to share.
 
 ### Fonts Source
 
-Noto Serif TC and Cutive Mono from Google Fonts
+**Noto Serif TC** and **Cutive Mono** from Google Fonts
 
 <https://fonts.google.com/>
 
-Quentin Script Free Typeface by Get Studio
+**Quentin Script Free Typeface** by Get Studio
 
 <https://www.behance.net/gallery/47512173/Quentin-Script-Free-Typeface>
 
 ## Contributing
 
-This is a personal project, so I am not sure if I will be accepting pull request. But feel free to flag any issue, it would be much appreciated.
+This is a personal project, so pull requests will most likely not be accepted, but feel free to flag any issue.
 
 ## License
 
-"Pierre Stone" is a made-up brand name without a trademark, but it is still not encouraged to use it.
+"Pierre Stone" is a made-up brand name without a trademark, but any form of usage is still not encouraged.
 
-The use of logo SVG material is not permitted.
+Direct use of logo SVG materials is not permitted.
 
 Other parts of the website are free to use as per GitHub guideline.
 
