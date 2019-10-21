@@ -17,7 +17,7 @@ As of the time of writing, the admin page functions are not complete, and bookin
 * phpMyAdmin for MySQL database
 * ...and various JS plug-ins.
 
-### Image Rources
+### Image Resources
 
 Pexels
 
@@ -25,7 +25,7 @@ Pexels
 
 Images are covered by **Creative Commons Zero (CC0)** license; kudos to all the creators for their works, and I truly appreciate their kindness to share.
 
-### Fonts Source
+### Font Resources
 
 **Noto Serif TC** and **Cutive Mono** from Google Fonts
 
@@ -34,6 +34,12 @@ Images are covered by **Creative Commons Zero (CC0)** license; kudos to all the 
 **Quentin Script Free Typeface** by Get Studio
 
 <https://www.behance.net/gallery/47512173/Quentin-Script-Free-Typeface>
+
+### Icon Resource
+
+Font Awesome
+
+<https://fontawesome.com/>
 
 ## Contributing
 
